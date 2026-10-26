@@ -1,0 +1,59 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "qsoro-skills",
+  "description": "Colección personal de skills/plugins para Claude Code: Superpowers, claude-mem, Impeccable, Ponytail y find-skills.",
+  "owner": {
+    "name": "Qsoro"
+  },
+  "plugins": [
+    {
+      "name": "superpowers",
+      "description": "Metodología de desarrollo: brainstorming, planes, TDD, debugging sistemático, code review y subagentes (obra/superpowers).",
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      },
+      "category": "workflow",
+      "license": "MIT"
+    },
+    {
+      "name": "mem",
+      "description": "Memoria persistente entre sesiones: captura el uso de herramientas, lo comprime y lo reinyecta en sesiones nuevas (thedotmack/claude-mem).",
+      "source": {
+        "source": "git-subdir",
+        "url": "thedotmack/claude-mem",
+        "path": "plugin"
+      },
+      "category": "memory",
+      "license": "Apache-2.0",
+      "displayName": "claude-mem"
+    },
+    {
+      "name": "impeccable",
+      "description": "Diseño frontend: un skill con comandos (/impeccable audit, critique, polish…) y detección de anti-patrones (pbakaus/impeccable).",
+      "source": {
+        "source": "git-subdir",
+        "url": "pbakaus/impeccable",
+        "path": "plugin"
+      },
+      "category": "design",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ponytail",
+      "description": "Modo 'senior dev perezoso': stdlib y lo que ya existe antes que código nuevo; /ponytail-review, -audit, -debt (DietrichGebert/ponytail).",
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      },
+      "category": "productivity",
+      "license": "MIT"
+    },
+    {
+      "name": "find-skills",
+      "description": "Meta-skill para buscar e instalar otras skills desde skills.sh con npx skills (vercel-labs/skills, copia local).",
+      "source": "./plugins/find-skills",
+      "category": "meta"
+    }
+  ]
+}

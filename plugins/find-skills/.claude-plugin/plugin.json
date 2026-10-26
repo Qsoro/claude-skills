@@ -1,0 +1,8 @@
+{
+  "name": "find-skills",
+  "version": "1.0.0",
+  "description": "Descubre e instala skills del ecosistema abierto (skills.sh) vía la Skills CLI (npx skills). Copia de vercel-labs/skills @ 65d20cb.",
+  "author": { "name": "Vercel Labs" },
+  "repository": "https://github.com/vercel-labs/skills",
+  "license": "MIT"
+}
