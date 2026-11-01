@@ -21,7 +21,7 @@
       "description": "Memoria persistente entre sesiones: captura el uso de herramientas, lo comprime y lo reinyecta en sesiones nuevas (thedotmack/claude-mem).",
       "source": {
         "source": "git-subdir",
-        "url": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem.git",
         "path": "plugin"
       },
       "category": "memory",
@@ -33,7 +33,7 @@
       "description": "Diseño frontend: un skill con comandos (/impeccable audit, critique, polish…) y detección de anti-patrones (pbakaus/impeccable).",
       "source": {
         "source": "git-subdir",
-        "url": "pbakaus/impeccable",
+        "url": "https://github.com/pbakaus/impeccable.git",
         "path": "plugin"
       },
       "category": "design",
