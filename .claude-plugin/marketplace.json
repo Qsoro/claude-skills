@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "qsoro-skills",
-  "description": "Colección personal de skills/plugins para Claude Code: Superpowers, claude-mem, Impeccable, Ponytail y find-skills.",
+  "description": "Colección personal de skills/plugins para Claude Code: Superpowers, claude-mem, Impeccable, Ponytail, find-skills y asset-forge.",
   "owner": {
     "name": "Qsoro"
   },
@@ -54,6 +54,16 @@
       "description": "Meta-skill para buscar e instalar otras skills desde skills.sh con npx skills (vercel-labs/skills, copia local).",
       "source": "./plugins/find-skills",
       "category": "meta"
+    },
+    {
+      "name": "asset-forge",
+      "description": "Assets visuales locales y gratis con ComfyUI: imágenes, edición, fondos transparentes, SVG, sprite sheets con atlas para PixiJS/Phaser y guía de estilo por proyecto (Qsoro/asset-forge, privado).",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Qsoro/asset-forge.git",
+        "path": "plugin"
+      },
+      "category": "design"
     }
   ]
 }

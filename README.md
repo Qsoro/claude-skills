@@ -9,6 +9,7 @@ Marketplace personal de plugins/skills para Claude Code. Un solo `marketplace ad
 | `impeccable` | Diseño frontend: `/impeccable init`, `audit`, `critique`, `polish`… + anti-patrones | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 |
 | `ponytail` | Fuerza la solución mínima (stdlib y lo que ya existe primero). `/ponytail-review`, `-audit`, `-debt` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT |
 | `find-skills` | Busca e instala otras skills de [skills.sh](https://skills.sh) con `npx skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT |
+| `asset-forge` | Assets visuales locales y gratis: imágenes con ComfyUI, edición, fondos transparentes, SVG, sprite sheets con atlas y guía de estilo por proyecto | Qsoro/asset-forge (privado) | Personal |
 
 ## Cómo está armado
 
@@ -32,6 +33,7 @@ Subí este repo a GitHub (o cualquier git) y en Claude Code:
 /plugin install impeccable@qsoro-skills
 /plugin install ponytail@qsoro-skills
 /plugin install find-skills@qsoro-skills
+/plugin install asset-forge@qsoro-skills
 ```
 
 Desde la terminal es lo mismo con `claude plugin marketplace add …` y `claude plugin install …`. También funciona sin subirlo: `claude plugin marketplace add /ruta/a/claude-skills`.
@@ -44,6 +46,8 @@ Reiniciá Claude Code después de instalar.
 - **ponytail**: `node` en el PATH (usa dos hooks chicos). Tiene opciones: `/plugin configure ponytail@qsoro-skills`.
 - **find-skills**: Node.js para `npx skills`.
 - **impeccable**: arrancá cada proyecto con `/impeccable init`.
+- **asset-forge**: repo privado (solo lo instala quien tenga acceso). Necesita ComfyUI y el entorno de Python del repo;
+  pasos en su README. Si el repo no está en `C:\Python\IA Propia`, definir `ASSET_FORGE_PYTHON`.
 
 ## Actualizar
 
